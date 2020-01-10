@@ -1,0 +1,952 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.banner {
+    /*background: url(../images/map.png) no-repeat right center;*/
+    height: 400px;
+    padding-top: 80px;
+}
+
+
+.banner-btn {
+    font-size: 14px;
+}
+
+.beta {
+    clear: both;
+    height: auto;
+    padding-top: 26px;
+}
+
+.beta1 {
+    clear: both;
+    height: auto;
+    padding-top: 26px;
+}
+
+
+.beta1 > a {
+    width: 276px;
+    box-shadow: 2px 2px 5px #080856;
+}
+
+
+/*第二部分*/
+.TCbox {
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    height: 450px;
+    margin-top: 50px;
+    color: #fff;
+    background: url('../img/markbox@2x.png') no-repeat;
+	background-size:cover;
+
+}
+
+
+.TCtitile {
+    width: 100%;
+    padding-top: 40px;
+    margin-left: -25px;
+    font-size: 36px;
+}
+
+.titleft {
+    padding-right: 89px;
+
+}
+
+.titright {
+    padding-left: 121px;
+
+}
+
+.tcContent {
+    margin-top: 35px;
+    height: 75px;
+}
+
+.tcimgl {
+    float: left;
+    margin-left: 100px;
+}
+
+.tctextl {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.tcimgr {
+    margin-right: 290px;
+    float: right;
+}
+
+.tctextr {
+    float: right;
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+.Vline {
+    border-right: 2px solid #d8c8e1;
+    width: 4px;
+    height: 375px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-top: -375px;
+    margin-left: 469px;
+
+}
+
+
+/*What is our solution?*/
+
+.solution {
+    background-color: #ffffff;
+}
+
+
+.sol {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.sol > h3 {
+    text-align: center;
+    font-weight: 600;
+    font-family: SFProDisplay-Bold;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.sol > p {
+    text-align: center;
+    margin-top: 16px;
+
+    font-family: SFProDisplay-Regular;
+    font-size: 24px;
+    color: #909499;
+    letter-spacing: 0;
+}
+
+.sol_1 {
+    width: 131px;
+    height: 184px;
+}
+
+.sol_2 {
+    width: 132px;
+    height: 184px;
+}
+
+.sol_3 {
+    width: 112px;
+    height: 184px;
+}
+
+.sol_4 {
+    width: 126px;
+    height: 184px;
+}
+
+.titleline {
+    width: 80px;
+    height: 4px;
+    background: #43deee;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.solist {
+    list-style: none;
+    width: 950px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.solist li {
+    text-align: center;
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+}
+
+.solist li p {
+    text-align: center;
+    margin-top: 15px;
+    font-family: SFProDisplay-Bold;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+
+
+}
+
+.soline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #611f86, #3f42a2);
+    border-radius: 2px;
+    margin: 15px 0 20px;
+}
+
+.slotxt {
+    clear: both;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.slotxt li {
+    width: 245px;
+    height: 218px;
+    background: linear-gradient(to top, #7e4a9e, #6469b6);
+    float: left;
+    color: #fff;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 8px #f5f1ff;
+    border-radius: 2px;
+}
+
+.slotxt li p {
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.tm {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.tm img {
+    width: 800px;
+}
+
+.cel {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.celtexta {
+    width: 30%;
+    height: 300px;
+
+    background-image: linear-gradient(-180deg, #000000 2%, #242554 97%);
+    border-radius: 4px;
+
+    margin-top: 25px;
+    float: left;
+    color: white;
+
+    padding: 32px 22px;
+
+    font-weight: 550;
+
+    text-align: left;
+
+    margin-left: 30px;
+}
+
+.celtexta span {
+    font-family: SFProDisplay-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.celtexta label {
+     
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+/*NetCentric Robot Factory*/
+
+.robot {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.robot > h3 {
+    text-align: center;
+    font-family: SFProDisplay-Bold;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.facl img {
+    width: 215px;
+}
+
+.robot > p {
+
+}
+
+.factory {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.facl {
+    width: 35%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.facr {
+    width: 65%;
+    line-height: 25px;
+    float: left;
+}
+
+.facr h3 {
+    font-family: SFProDisplay-Bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.facr p {
+     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.trade_m {
+    font-family: SFProDisplay-Bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+
+    font-weight: 700;
+
+    clear: both;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.robotlist {
+    list-style: none;
+}
+
+.robotlist li {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.robotlist li img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.net1 {
+    width: 800px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.net1 > div {
+    float: left;
+}
+
+.netxt {
+    width: 40%;
+    background: #fff;
+    box-shadow: 2px 2px 8px #f5f1ff;
+    padding: 15px;
+    line-height: 23px;
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+.netpic {
+    width: 40%;
+}
+
+.f_box {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+}
+
+.netc {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.f_3_img {
+    width: 324px;
+}
+
+.f_4_img {
+    width: 348px;
+}
+
+.f_5_img {
+    width: 323px;
+}
+
+.netcLine1 {
+    width: 100%;
+    height: 260px;
+    font-weight: 550;
+
+    margin-bottom: 30px;
+}
+
+.netcTextl {
+    width: 400px;
+    height: 125px;
+
+    margin-left: 9.5%;
+
+    text-align: left;
+
+    float: left;
+     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+
+    font-weight: 400;
+
+    margin-top: 80px;
+
+}
+
+.cn-netcTextl {
+    width: 400px;
+    height: 100px;
+
+    margin-left: 9.5%;
+    font-size: 16px;
+
+    text-align: left;
+
+    float: left;
+
+    float: left;
+     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+
+    font-weight: 400;
+
+    margin-top: 80px;
+}
+
+.netcTextr {
+    width: 313px;
+    height: 125px;
+
+    margin-left: 2%;
+    margin-right: 10%;
+    font-size: 16px;
+
+    text-align: left;
+
+    float: right;
+     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+
+    font-weight: 400;
+
+    margin-top: 80px;
+}
+
+.cn-netcTextr {
+    width: 313px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 27px 0px rgba(221, 211, 244, 0.8);
+    margin-left: 2%;
+    margin-right: 10%;
+    font-size: 16px;
+    color: #2e2d7b;
+    text-align: left;
+    padding-top: 35px;
+    padding-left: 32px;
+    padding-right: 32px;
+    float: right;
+    margin-top: 100px;
+}
+
+/*Team Members*/
+.team {
+    width: 1000px;
+    margin: 0 auto;
+
+    padding-top: 50px;
+
+}
+
+.s_advisor {
+    font-family: SFProDisplay-Bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+
+    padding: 50px 10px 0 0;
+    font-weight: bold;
+    clear: both;
+    text-align: center;
+}
+
+.team > h3 {
+    text-align: center;
+    font-family: SFProDisplay-Bold;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0;
+
+
+}
+
+.team > p {
+    /*clear: both;*/
+    /*text-align: center;*/
+    /*margin: 5px 0;*/
+    /*font-size: 21px;*/
+    /*padding: 50px 10px 0 0;*/
+    /*font-weight: bold;*/
+    /*color: #0b0b6f;*/
+}
+
+.Team1 {
+    list-style: none;
+}
+
+.Team1 li {
+    text-align: center;
+    float: left;
+    height: 214px;
+    padding-top: 19px;
+}
+
+.Team1 li h4 {
+    margin: 0;
+
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+}
+
+.Team1 li span {
+
+    position: relative;
+    bottom: 8px;
+     
+    font-size: 14px;
+    color: #909499;
+    letter-spacing: 0;
+
+}
+
+.Team1 li .uhead {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    margin: 18px 0;
+}
+
+.Team1 li .teaminfo {
+
+    width: 230px;
+    height: 176px;
+    margin: 0px auto;
+}
+
+.Team1 li.swiper-slide-active {
+    padding-top: 0;
+}
+
+/*.Team1 li.swiper-slide-active .teaminfo{ width: 280px; height: 380px; margin-top: -60px;}*/
+.Team1 li.swiper-slide-active .teaminfo {
+    height: 214px;
+}
+
+.Team1 li.swiper-slide-active .teamtext-active {
+    display: block;
+}
+
+.Team1 li.swiper-slide-active .teaminfo .uhead {
+    width: 116px;
+    height: 116px;
+    margin: 20px 0;
+}
+
+/*滑动插件重置*/
+/*.swiper-container {
+    box-sizing: border-box !important;
+    padding: 0px 10px 30px 10px !important;
+}*/
+
+.new-spage {
+    bottom: 0px !important;
+}
+
+.new-spage .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    background: #562a8e;
+}
+
+.new-spage .swiper-pagination-bullet-active {
+    border-color: #cac0de;
+}
+
+/*切换*/
+.tab {
+    width: 100px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+
+.tab > a {
+    float: left;
+    margin: 0 5px;
+}
+
+.tab > a img {
+    vertical-align: middle;
+}
+
+/*底部*/
+
+
+.foot {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footl {
+    float: left;
+    padding-top: 70px;
+}
+
+.footr {
+    float: right;
+    margin-right: 50px;
+}
+
+.footr a {
+    float: left;
+    margin: 0 15px 20px;
+}
+
+.arrow1l {
+    margin-top: -15px;
+    outline: none;
+    margin-left: 433px;
+    height: 18px;
+}
+
+.arrow1r {
+    margin-top: -15px;
+    outline: none;
+    margin-right: 433px;
+    height: 18px;
+}
+
+.arrow2l {
+    margin-top: 364px;
+    outline: none;
+    margin-left: 385px;
+    height: 18px;
+}
+
+.arrow2r {
+    margin-top: 364px;
+    outline: none;
+    margin-right: 385px;
+    font-size: 15px;
+    height: 18px;
+}
+
+/*团队信息*/
+.Team1 > li div.teamtext {
+    line-height: 15px;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 2px;
+    background: #fff;
+    opacity: 0.8;
+    color: #602086;
+    padding: 15px;
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+
+.teamtext-active {
+    line-height: 15px;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: #602086;
+    padding: 15px;
+    padding-left: 25px;
+    top: 120px;
+    overflow: auto;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    display: none;
+}
+
+.teamtext span {
+    font-size: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+
+.teamin {
+    width: 16px;
+    height: 16px;
+}
+
+.teamin img {
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/*1024*/
+
+
+
+
+
+/*新添加*/
+.Team1 li {
+    list-style: none;
+}
+
+.Th {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 110px;
+    height: 373px;
+    margin-bottom: 50px;
+
+}
+
+
+.thTitlel {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    margin-left: 15%;
+    margin-top: 10px;
+
+    font-family: SFProDisplay-Bold;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.thContentl {
+    font-size: 16px;
+    float: left;
+    margin-left: -25%;
+    margin-top: 40px;
+
+     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.thTitler {
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    margin-right: 16%;
+    margin-top: 10px;
+}
+
+.thContentr {
+    font-size: 16px;
+    float: right;
+    margin-right: -27%;
+    margin-top: 40px;    
+    font-size: 16px;
+    color: #000000 !important;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+
+.cn-thTitlel {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    margin-left: 21%;
+    margin-top: 20px;     
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.cn-thContentl {
+    font-size: 16px;
+    float: left;
+    margin-left: -20%;
+    margin-top: 38px;
+}
+
+.cn-thTitler {
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    margin-right: 24%;
+}
+
+.cn-thContentr {
+    font-size: 16px;
+    float: right;
+    margin-right: -24%;
+    margin-top: 18px;
+}
+
+
+.thImg {
+    width: 100%;
+
+}
+
+.thText {
+    height: 250px;
+    width: 100%;
+}
+
+.circularl {
+
+    margin-left: 18%;
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.circularr img {
+    float: left;
+    text-align: center;
+}
+
+.circularl img {
+
+}
+
+.imginc {
+    width: 49px;
+    height: 88px;
+    margin-top: 25px;
+}
+
+.left_img {
+    margin-left: 50px;
+}
+
+.right_img {
+    margin-left: 420px !important;
+    margin-top: 80px;
+    width: 58px;
+    height: 90px;
+}
+
+.marqd {
+    height: 38px;
+    width: 415px;
+    background-color: #fff;
+    float: left;
+    margin-top: -40px;
+    margin-left: 207px;
+    background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#611f86), to(#3c45a5));
+}
+
+.updateLog {
+    color: #fff;
+    font-size: 15px;
+    line-height: 38px;
+    margin-left: 15px;
+    display: block;
+    width: 145px;
+    float: left;
+    text-align: center;
+}
+
+.marq {
+    float: right;
+    width: 255px;
+    color: #fff;
+    line-height: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
