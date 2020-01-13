@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<nav class="navbar navbar-fixed-top net-mainnav" id="topNav" role="navigation" >
-			<div class="lg-width" style="width: 1400px;margin: 0 auto;float: none;">	<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="lg-width" style="width: 100%;display:flex;margin: 0 auto;float: none;">	<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header nav-marginl">
 					<a @click="toMain" class="nav-aimg">
 						<img :src="nav_logo" class="nav-logoImg" alt="">

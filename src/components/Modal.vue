@@ -293,24 +293,52 @@
             </div>-->
             <div class="lg-width" style="width:100%">
               學生姓名
-              <input type="text" class="form-control lg-border" v-model="registerData.phone" />
+              <input
+                type="text"
+                class="form-control lg-border"
+                v-model="registerData.studentName"
+              />
             </div>
           </div>
           <div class="row lg-row" style="margin-top: 20px;width: 80%;margin-left: 10%;">
-            學生年紀
+            學生年级
+            <select v-model="registerData.grade" class="form-controls lg-border">
+              <div v-for="(item,i) in gradeList" :key="i">
+                <option :value="item">{{item}}</option>
+              </div>
+            </select>
             <div class="lg-width" style="width:100%">
-              <input type="password" class="form-control lg-border" v-model="registerData.password" />
+              <input type="text" class="form-control lg-border" v-model="registerData.grade" />
             </div>
           </div>
           <div class="row lg-row" style="margin-top: 20px;width: 80%;margin-left: 10%;">
             學生手機號
             <div class="lg-width" style="width:100%">
               <input
-                type="password"
+                type="text"
                 class="form-control lg-border"
                 :placeholder="$t('net.phonenumber')"
-                v-model="registerData.repassword"
+                v-model="registerData.phoneNum"
               />
+            </div>
+          </div>
+          <div
+            class="row lg-row"
+            style="margin-top: 20px;width: 80%;margin-left: 10%;display:'flex"
+          >
+            <div>
+              手機號验证码
+              <div class="lg-width" style="width:100%">
+                <input
+                  type="code"
+                  class="form-control lg-border"
+                  :placeholder="$t('net.phonenumber')"
+                  v-model="registerData.code"
+                />
+              </div>
+            </div>
+            <div>
+              <button id="button" @click="getSmsCode('1')">获取验证码</button>
             </div>
           </div>
           <!-- <div class="row lg-row" style="margin-top: 20px;width: 80%;margin-left: 10%;">
@@ -865,7 +893,7 @@ import QRCode from "qrcodejs2";
 import {
   getHsdGrade,
   getHsdCulum,
-  
+  getHsdSmsCode,
   loginU,
   loginM,
   getVcode,
@@ -877,6 +905,7 @@ import {
   mailReg,
   authenticate
 } from "../api/api";
+import { TemplateCode } from "./checkTemplateCode.js";
 import marked from "marked/marked.min.js";
 import termcnload from "../assets/doc/term_cn.md";
 import termkoload from "../assets/doc/term_ko.md";
@@ -904,11 +933,13 @@ export default {
         code: ""
       },
       registerData: {
-        phone: "",
+        phoneNum: "",
+        codeId: "",
+        studentName: "",
+        grade: "",
         code: "",
         password: "",
         countryCode: "86",
-        repasssword: "",
         templateCode: ""
       },
       registerMail: {
@@ -957,9 +988,21 @@ export default {
     this.getCulum();
   },
   methods: {
+    //获取短信验证码
+    async getSmsCode(id) {
+      let smsList = {};
+      smsList.phoneNum = this.registerData.phoneNum;
+      smsList.templateCode = id; //13872250190
+      // smsList.templateCode = TemplateCode[1];
+      smsList.countryCode = "86";
+      const res = await getHsdSmsCode(smsList);
+      if (res.code == 200) {
+        this.registerData.codeId = res.data.codeId;
+      }
+    },
     //獲取年級科目列表
     async getCulum() {
-      const res = await getHsdCulum();
+      const res = await getHsdCulum('七年级');
       if (res.code == "200") {
         this.culumList = res.data;
       }
@@ -967,11 +1010,12 @@ export default {
     //获取年纪字段列表
     async getGrade() {
       const res = await getHsdGrade();
-	  console.log("grade", res);
-	  if(res.code=='200'){
-		  this.gradeList=res.data
-	  }
+      console.log("grade", res);
+      if (res.code == "200") {
+        this.gradeList = res.data;
+      }
     },
+
     //扫描二维码
     qrcodeScan() {
       //生成二维码
